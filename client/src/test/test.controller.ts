@@ -4,9 +4,9 @@ import { grpcClientOptions1 } from './client1';
 import { grpcClientOptions2 } from './client2';
 import { Observable, of } from 'rxjs';
 import { grpcClientPrismaOptions } from './client_prisma';
-import { MicrService, User, UserList } from '../../../proto/build/micr_prisma';
-import { Micr1Service, Micr1 } from '../../../proto/build/micr1';
-import { Micr2Service, Micr2 } from '../../../proto/build/micr2';
+import { MicrService, User, UserList } from '@proto/micr_prisma';
+import { Micr1Service, Micr1 } from '@proto/micr1';
+import { Micr2Service, Micr2 } from '@proto/micr2';
 
 @Controller('test')
 export class TestController implements OnModuleInit {

@@ -9,7 +9,7 @@ format:
 	$(foreach project,$(projects),${docker} ${project} npm run format;)
 
 fix_permission:
-	sudo chown -R ${USER}:${GROUP} ./
+	sudo chown -R ${whoami}:${whoami} ./
 
 npm_update:
 	$(foreach project,$(projects),${docker} ${project} npm update;)

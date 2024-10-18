@@ -9,7 +9,11 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@proto/*": ["../proto/build/*"]
+    }
+
   },
   "exclude": ["node_modules", "dist"]
 }

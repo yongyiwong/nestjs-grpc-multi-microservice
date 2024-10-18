@@ -8,20 +8,18 @@ export class MicrService {
   constructor(private readonly prisma: PrismaService) {}
 
   @GrpcMethod()
-  save(metadata: any): Promise<User> {
-    return this.prisma.mutation.createUser({
-      data: { name: 'John2', surname: 'Prova' },
-    });
+  save(metadata: any): User {
+    const user: User = {
+      id: '1',
+      name: 'John2',
+      surname: 'Prova',
+    };
+    
+    return user;
   }
 
   @GrpcMethod()
-  async findOne(metadata: any): Promise<any> {
-    return {
-      users: await this.prisma.query.users({
-        where: {
-          name: 'John2',
-        },
-      }),
-    };
+  async findOne(metadata: any): Promise<User> {
+    return { id: '1',  name: 'John2', surname: 'Prova' };    
   }
 }

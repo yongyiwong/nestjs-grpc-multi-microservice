@@ -1,12 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { Prisma } from './prisma.binding';
 
 @Injectable()
-export class PrismaService extends Prisma {
+export class PrismaService {
   constructor() {
-    super({
-      endpoint: 'http://prisma:4466',
-      debug: false,
-    });
+    // super({
+    //   endpoint: 'http://prisma:4466',
+    //   debug: false,
+    // });
   }
 }

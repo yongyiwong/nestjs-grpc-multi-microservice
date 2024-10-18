@@ -15,6 +15,7 @@ async function bootstrap() {
   });
 
   // tslint:disable-next-line: no-console
-  app.listen(() => console.log('Microservice is listening'));
+  app.listen();
+  console.log('Microservice Micr2 is listening')
 }
 bootstrap();

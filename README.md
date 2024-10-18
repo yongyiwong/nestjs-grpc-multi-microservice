@@ -1,13 +1,12 @@
 # NestJS + gRPC: a multi microservices example
 
-This repo show as to configure a multi microservices stack in NestJS using gRPC in docker environment.
+This repo shows as to configure a multi microservices stack in NestJS using gRPC in docker environment.
 
 ## Docker Stack
 
 - 3 NestJS microservices
 - 1 NestJS client
 - 1 Prisma server
-- 1 DB MySQL
 
 <img src="assets/microservices.png">
 
@@ -85,9 +84,8 @@ export interface MicrService {
 ```
 We can use these interfaces in NestJS project easily.
 
-## Documentation
-
-- <a href="https://mariobuonomo.dev/blog/tutorial-nestjs-microservices-grpc">Blog</a>
+## Description
+- Configured recent Node(22) + Nest version 
 
 ## Thanks to
 
@@ -95,3 +93,5 @@ We can use these interfaces in NestJS project easily.
 - <a href="https://grpc.io/">gRPC</a>
 - <a href="https://www.prisma.io/">Prisma.io</a>
 - <a href="https://github.com/stephenh/ts-proto">ts-proto</a>
+- <a href="https://github.com/mabuonomo">Mario Buonomo</a>
+

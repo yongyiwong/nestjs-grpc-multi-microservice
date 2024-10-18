@@ -14,7 +14,8 @@ async function bootstrap() {
     },
   });
 
-  // tslint:disable-next-line: no-console
-  app.listen(() => console.log('Microservice is listening'));
+  // Start the microservice
+  await app.listen(); // Just call listen without any arguments
+  console.log('Microservice is listening on 0.0.0.0:50051');
 }
 bootstrap();
